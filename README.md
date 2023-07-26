@@ -8,7 +8,7 @@ and one or more explanatory variables (or independent variables).
 
 # dataset url
 
-<p>data_url = "http://lib.stat.cmu.edu/datasets/boston"
-raw_df = pd.read_csv(data_url, sep="\s+", skiprows=22, header=None)
-data = np.hstack([raw_df.values[::2, :], raw_df.values[1::2, :2]])
-target = raw_df.values[1::2, 2] </p>
+<p>data_url = "http://lib.stat.cmu.edu/datasets/boston" </p>
+ <p>raw_df = pd.read_csv(data_url, sep="\s+", skiprows=22, header=None)</p>
+<p>data = np.hstack([raw_df.values[::2, :], raw_df.values[1::2, :2]]) </p>
+<p>target = raw_df.values[1::2, 2] </p>
