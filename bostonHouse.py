@@ -21,7 +21,11 @@ x_train, x_test, y_train, y_test = train_test_split(data, target, test_size=0.33
 reg_model.fit(x_train, y_train)
 
 #Print the coefecients/weights for each feature/column of our model
-print(reg.coef_)
+print(reg_model.coef_)
 
+# get the predected values for prices
+y_pred = reg_model.predict(x_test)
+print(y_pred)
 
-
+# get the accuracy using the mean squared error 
+print(np.mean((y_pred-y_test)**2),'%')
